@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDeCafé</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/normalize.css" as="style">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"crossorigin="crossorigin"  as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/css/style.css" as="style">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h2 class="no-margin">
+                Blog de café con consejos y cursos
+            </h2>
+            <p class="no-margin">
+                Aprende de los expertos con las mejores recetas y consejos
+            </p>
+        </div>
+    </header>
+    <main class="contenedor">
+        <h3 class="centrar-texto">Nuestros Próximos Cursos y Talleres</h3>
+
+        <div class="curso">
+            <div class="curso__imagen">
+                <img loading="lazy" src="img/curso1.jpg" alt="Taza de espresso recién extraído junto a un croissant">
+            </div>
+            <div class="curso__informacion">
+                <h4 class="no-margin">Técnicas de Extracción de Café: Espresso, V60 y Prensa Francesa</h4>
+                <p class="curso__label">
+                    Precio: <span class="curso__info">Gratis</span>
+                </p>
+                <p class="curso__label">
+                    Cupo: <span class="curso__info">20</span>
+                </p>
+                <p class="curso__label">
+                    Duración: <span class="curso__info">3 horas</span>
+                </p>
+                <p class="descripcion">
+                    Aprende los fundamentos que definen una buena taza de café: la relación agua-café, el tiempo y la
+                    temperatura de extracción, y cómo ajustar la molienda según el método. Practicaremos en vivo con
+                    espresso, V60 y prensa francesa para que aprendas a identificar una extracción equilibrada frente a
+                    una sub o sobreextraída.
+                </p>
+                <p class="descripcion"><strong>Temas clave:</strong> relación café/agua, tiempos y temperatura de
+                    extracción, calibración de la molienda, diferencias entre métodos de filtrado y espresso.</p>
+
+                <button type="button" class="boton boton--secundario curso__boton-inscripcion"
+                    aria-expanded="false" aria-controls="form-curso-1">
+                    Inscribirme a este curso
+                </button>
+
+                <form class="formulario-inscripcion oculto" id="form-curso-1" data-curso="Técnicas de Extracción de Café: Espresso, V60 y Prensa Francesa" novalidate>
+                    <div class="campo campo--inscripcion">
+                        <label class="campo__label" for="email-curso-1">E-mail</label>
+                        <input type="email" placeholder="tucorreo@ejemplo.com" id="email-curso-1" name="email"
+                            class="campo__field" required>
+                    </div>
+                    <span class="campo__error" data-error-para="email-curso-1"></span>
+
+                    <div class="campo campo--inscripcion">
+                        <label class="campo__label" for="telefono-curso-1">Teléfono</label>
+                        <input type="tel" placeholder="Ej: +57 300 1234567" id="telefono-curso-1" name="telefono"
+                            class="campo__field" required>
+                    </div>
+                    <span class="campo__error" data-error-para="telefono-curso-1"></span>
+
+                    <div>
+                        <input type="submit" value="Confirmar inscripción" class="boton boton--primario">
+                    </div>
+                    <p class="mensaje oculto" role="status" aria-live="polite"></p>
+                </form>
+            </div> <!--.Curso__informacion-->
+        </div> <!--.Curso-->
+
+        <div class="curso">
+            <div class="curso__imagen">
+                <img loading="lazy" src="img/curso2.jpg" alt="Taza de café con leche decorada con arte latte en forma de hoja">
+            </div>
+            <div class="curso__informacion">
+                <h4 class="no-margin">Introducción al Latte Art: Espuma y Diseños en Café con Leche</h4>
+                <p class="curso__label">
+                    Precio: <span class="curso__info">Gratis</span>
+                </p>
+                <p class="curso__label">
+                    Cupo: <span class="curso__info">15</span>
+                </p>
+                <p class="curso__label">
+                    Duración: <span class="curso__info">2.5 horas</span>
+                </p>
+                <p class="descripcion">
+                    Un taller práctico para dar tus primeros pasos en el arte latte. Aprenderás a texturizar la leche
+                    correctamente, a controlar la temperatura y a verter con la técnica adecuada para lograr figuras
+                    básicas como el corazón y la roseta. Ideal si quieres darle un toque profesional a tus bebidas con
+                    leche en casa o en tu cafetería.
+                </p>
+                <p class="descripcion"><strong>Temas clave:</strong> texturizado y microespuma de la leche,
+                    temperatura ideal de vertido, técnica de vertido para corazón y roseta, cuidado y mantenimiento de
+                    la jarra vaporizadora.</p>
+
+                <button type="button" class="boton boton--secundario curso__boton-inscripcion"
+                    aria-expanded="false" aria-controls="form-curso-2">
+                    Inscribirme a este curso
+                </button>
+
+                <form class="formulario-inscripcion oculto" id="form-curso-2" data-curso="Introducción al Latte Art: Espuma y Diseños en Café con Leche" novalidate>
+                    <div class="campo campo--inscripcion">
+                        <label class="campo__label" for="email-curso-2">E-mail</label>
+                        <input type="email" placeholder="tucorreo@ejemplo.com" id="email-curso-2" name="email"
+                            class="campo__field" required>
+                    </div>
+                    <span class="campo__error" data-error-para="email-curso-2"></span>
+
+                    <div class="campo campo--inscripcion">
+                        <label class="campo__label" for="telefono-curso-2">Teléfono</label>
+                        <input type="tel" placeholder="Ej: +57 300 1234567" id="telefono-curso-2" name="telefono"
+                            class="campo__field" required>
+                    </div>
+                    <span class="campo__error" data-error-para="telefono-curso-2"></span>
+
+                    <div>
+                        <input type="submit" value="Confirmar inscripción" class="boton boton--primario">
+                    </div>
+                    <p class="mensaje oculto" role="status" aria-live="polite"></p>
+                </form>
+            </div> <!--.Curso__informacion-->
+        </div> <!--.Curso-->
+
+        <div class="curso">
+            <div class="curso__imagen">
+                <img loading="lazy" src="img/curso3.jpg" alt="Cuatro tazas de café con diferentes preparaciones: espresso, latte y café negro">
+            </div>
+            <div class="curso__informacion">
+                <h4 class="no-margin">4 Recetas de Café para Principiantes</h4>
+                <p class="curso__label">
+                    Precio: <span class="curso__info">Gratis</span>
+                </p>
+                <p class="curso__label">
+                    Cupo: <span class="curso__info">25</span>
+                </p>
+                <p class="curso__label">
+                    Duración: <span class="curso__info">2 horas</span>
+                </p>
+                <p class="descripcion">
+                    Diseñado para quienes están empezando en el mundo del café. En este taller prepararás 4 recetas
+                    clásicas con equipo básico: espresso, americano, café con leche (latte) y cappuccino. Aprenderás
+                    las proporciones correctas de cada bebida y algunos trucos para replicarlas fácilmente en casa.
+                </p>
+                <p class="descripcion"><strong>Temas clave:</strong> espresso clásico, café americano, preparación de
+                    latte, preparación de cappuccino y proporciones de café y leche.</p>
+
+                <button type="button" class="boton boton--secundario curso__boton-inscripcion"
+                    aria-expanded="false" aria-controls="form-curso-3">
+                    Inscribirme a este curso
+                </button>
+
+                <form class="formulario-inscripcion oculto" id="form-curso-3" data-curso="4 Recetas de Café para Principiantes" novalidate>
+                    <div class="campo campo--inscripcion">
+                        <label class="campo__label" for="email-curso-3">E-mail</label>
+                        <input type="email" placeholder="tucorreo@ejemplo.com" id="email-curso-3" name="email"
+                            class="campo__field" required>
+                    </div>
+                    <span class="campo__error" data-error-para="email-curso-3"></span>
+
+                    <div class="campo campo--inscripcion">
+                        <label class="campo__label" for="telefono-curso-3">Teléfono</label>
+                        <input type="tel" placeholder="Ej: +57 300 1234567" id="telefono-curso-3" name="telefono"
+                            class="campo__field" required>
+                    </div>
+                    <span class="campo__error" data-error-para="telefono-curso-3"></span>
+
+                    <div>
+                        <input type="submit" value="Confirmar inscripción" class="boton boton--primario">
+                    </div>
+                    <p class="mensaje oculto" role="status" aria-live="polite"></p>
+                </form>
+            </div> <!--.Curso__informacion-->
+        </div> <!--.Curso-->
+
+    </main>
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <p class="copy">&copy; 2026 todos los derechos reservados Yeimer Torres</p>
+    </footer>
+    </div>
+        <script src="js/normalize.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/inscripciones.js"></script>
+</body>
+
+</html>
